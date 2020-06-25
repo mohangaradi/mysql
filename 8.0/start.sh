@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker run --detach --publish 3306:3306 -v /home/mohan/thereview.ai/data/mysql:/var/lib/mysql mysql-server:8.0
+docker run --detach --volume /home/mohan/Documents/projects/thereview.ai/data/mysql:/var/lib/mysql --publish 3306:3306 --env "MYSQL_ROOT_PASSWORD=" mysql-server:8.0
